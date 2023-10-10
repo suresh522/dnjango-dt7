@@ -1,3 +1,5 @@
+
+{% load static %}
 <!DOCTYPE html>	
 <html lang="en" dir="ltr"> 
 
@@ -17,24 +19,24 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="img/apple/apple_touch_icon_114.png"><!-- Apple Touch Icon 114x114 -->
         
         <!-- == Le Styles Tags == -->
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" /><!-- Twitter Bootstrap V 3.1.1 -->
-        <link rel="stylesheet" href="css/bootstrap/bootstrap-custom.css" /><!-- Custom Bootstrap Style -->
-        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" /><!-- Fancybox Lightboxs-->
-        <link rel="stylesheet" href="js/fancybox/helpers/jquery.fancybox-thumbs.css" /><!-- Fancybox Lightboxs-->
+        <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css'%}" /><!-- Twitter Bootstrap V 3.1.1 -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap-custom.css'%}" /><!-- Custom Bootstrap Style -->
+        <link rel="stylesheet" href="{% static 'js/fancybox/jquery.fancybox.css'%}" /><!-- Fancybox Lightboxs-->
+        <link rel="stylesheet" href="{% static 'js/fancybox/helpers/jquery.fancybox-thumbs.css'%}" /><!-- Fancybox Lightboxs-->
         
         <!-- == Le Main Styles Tags == -->
-        <link rel="stylesheet" href="css/style.css" /><!-- Main Style -->
+        <link rel="stylesheet" href="{% static 'css/style.css'%}" /><!-- Main Style -->
         
         <!-- == Le Themes Tags == -->
-        <link rel="stylesheet" href="css/theme/light.css" /><!-- Theme Style -->
-        <link rel="stylesheet" href="css/color/alizarin.css" /><!-- Color Style -->
+        <link rel="stylesheet" href="{% static 'css/theme/light.css'%}" /><!-- Theme Style -->
+        <link rel="stylesheet" href="{% static 'css/color/alizarin.css'%}" /><!-- Color Style -->
         
         <!--  For this page only ! -->
-        <link rel="stylesheet" href="css/home/index01.css" /><!-- Home 01 -->
-        <link rel="stylesheet" href="css/slider/revolution_slider.css" /><!-- Revolution Slider -->
+        <link rel="stylesheet" href="{% static 'css/home/index01.css'%}" /><!-- Home 01 -->
+        <link rel="stylesheet" href="{% static 'css/slider/revolution_slider.css'%}" /><!-- Revolution Slider -->
         
         <!--  Responsive ! -->
-		<link rel="stylesheet" href="css/responsive.css" /><!-- Layout Responsive -->
+		<link rel="stylesheet" href="{% static 'css/responsive.css'%}" /><!-- Layout Responsive -->
         
           
 
@@ -62,7 +64,7 @@
             <!-- # Logo #  -->
             <div class="logo">
             	<a href="index_01.html" title="Home">
-                	<img src="img/logo/logo@2x.png" width="127" height="27" alt="Rozana" title="Rozana Logo">
+                	<img src="{% static 'img/logo/logo@2x.png'%}" width="127" height="27" alt="Rozana" title="Rozana Logo">
                 </a>
             </div>
             <!-- # End Logo #  -->
@@ -331,7 +333,7 @@
     <!-- Fixed Header -->
      <header class="fixed-logo" >
     	<p class="text-right fixed-image">
-        	<img src="img/logo/logo.png">
+        	<img src="i{% static 'img/logo/logo.png'%}">
         </p>
     </header>
  	<!-- End# Fixed Header -->
@@ -339,7 +341,7 @@
 	<!-- Fixed Header -->
      <header class="fixed-logo" >
     	<p class="text-right fixed-image">
-        	<img src="img/logo/logo.png">
+        	<img src="{% static 'img/logo/logo.png'%}">
         </p>
     </header>
  	<!-- End# Fixed Header -->
@@ -354,7 +356,7 @@
                         <!-- SLIDE 01 -->
                         <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on"  data-title="Intro Slide">
                                 <!-- MAIN IMAGE -->
-                                <img src="img/revolution/dummy.png"  alt="slidebg" data-lazyload="img/revolution/slidebg.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                <img src="{% static 'img/revolution/dummy.png'%}"  alt="slidebg" data-lazyload="{% static 'img/revolution/slidebg.jpg'%}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                                 <!-- LAYERS -->
                             
                                 <!-- LAYER NR. 1 -->
@@ -367,7 +369,7 @@
                                     data-easing="easeOutBounce"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 2;"><img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/mobile_slide.png">
+                                    style="z-index: 2;"><img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/mobile_slide.png'%}">
                                 </div>
                             
                                 <!-- LAYER NR. 2 -->
@@ -380,7 +382,7 @@
                                     data-easing="Power3.easeOutBounce"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 3;"><img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/bootstrap.png">
+                                    style="z-index: 3;"><img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/bootstrap.png'%}">
                                 </div>
                             
                                 <!-- LAYER NR. 3 -->
@@ -393,7 +395,7 @@
                                     data-easing="Power3.easeOutBounce"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 4;"><img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/responsive.png">
+                                    style="z-index: 4;"><img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/responsive.png'%}">
                                 </div>
                             
                                 <!-- LAYER NR. 4 -->
@@ -406,7 +408,7 @@
                                     data-easing="Power3.easeOutBounce"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 6;"><img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/beauty.png">
+                                    style="z-index: 6;"><img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/beauty.png'%}">
                                 </div>
                                 
                                 <!-- LAYER NR. 5 -->
@@ -419,7 +421,7 @@
                                     data-easing="Power3.easeOutBounce"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 6;"><img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/simple.png">
+                                    style="z-index: 6;"><img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/simple.png'%}">
                                 </div>
                                 
                                  <!-- LAYER NR. 6 -->
@@ -432,7 +434,7 @@
                                     data-easing="Power3.easeOutBounce"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 6;"><img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/creative.png">
+                                    style="z-index: 6;"><img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/creative.png'%}">
                                 </div>
                             
                                 <!-- LAYER NR. 7 -->
@@ -504,7 +506,7 @@
                                     data-easing="Power3.easeInOut"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 11;"><img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/white_line.png">
+                                    style="z-index: 11;"><img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/white_line.png'%}">
                                 </div>
                             </li> 
                         <!-- End Slide 01 -->
@@ -512,7 +514,7 @@
                         <!-- SLIDE 02 -->
                         <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on"  data-title="Intro Slide 2">
                                 <!-- MAIN IMAGE -->
-                                <img src="img/revolution/dummy.png"  alt="slidebg" data-lazyload="img/revolution/slide_rev_2.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                <img src="{% static 'img/revolution/dummy.png'%}"  alt="slidebg" data-lazyload="{% static 'img/revolution/slide_rev_2.jpg'%}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                                 <!-- LAYERS -->
                             
                                 <!-- LAYER NR. 1 -->
@@ -523,7 +525,7 @@
                                     data-easing="Power3.easeInOut"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 2; right: 150px; bottom: 0; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px);"><img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/slide_rev_man.png">
+                                    style="z-index: 2; right: 150px; bottom: 0; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px);"><img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/slide_rev_man.png'%}">
                                 </div>
                             
                                 <!-- LAYER NR. 2 -->
@@ -567,7 +569,7 @@
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
                                     style="z-index: 6;">
-                                    <img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/slide_rev_arrow.png">
+                                    <img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/slide_rev_arrow.png'%}">
                                 </div>
                                 
                                 
@@ -582,7 +584,7 @@
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
                                     style="z-index: 7;">
-                                    <img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/slide_rev_buy.png">
+                                    <img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/slide_rev_buy.png'%}">
                                 </div>
                                 
                                 <!-- LAYER NR. 6 -->
@@ -596,7 +598,7 @@
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
                                     style="z-index: 8;">
-                                    <img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/slide_rev_ecommerce.png">
+                                    <img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/slide_rev_ecommerce.png'%}">
                                 </div>
                             </li>         
                         <!-- End Slide 02 --> 
@@ -604,7 +606,7 @@
                         <!-- SLIDE 03 -->
                         <li data-transition=" slotzoom-vertical" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on"  data-title="Intro Slide 3">
                                 <!-- MAIN IMAGE -->
-                                <img src="img/revolution/dummy.png"  alt="slidebg" data-lazyload="img/revolution/slide_rev_3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                <img src="{% static 'img/revolution/dummy.png'%}"  alt="slidebg" data-lazyload="{% static 'img/revolution/slide_rev_3.jpg'%}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                                 <!-- LAYERS -->
                             
                                 <!-- LAYER NR. 1 -->
@@ -616,7 +618,7 @@
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
                                     style="z-index: 2; right: 250px; bottom: 60px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                                    <img src="img/revolution/dummy.png" alt="" data-lazyload="img/revolution/slide_rev_monitor.png">
+                                    <img src="{% static 'img/revolution/dummy.png'%}" alt="" data-lazyload="{% static 'img/revolution/slide_rev_monitor.png'%}">
                                 </div>
                             
                                 <!-- LAYER NR. 2 -->
@@ -751,7 +753,7 @@
                             
                              <!-- # Image # -->
                             <div class="col-md-4 col-sm-4 hide-mob animated text-center" data-animation="bounceInUp">
-                                <img src="img/mobile.png" alt="Mobile" title="Service Mobile">
+                                <img src="{% static 'img/mobile.png'%}" alt="Mobile" title="Service Mobile">
                             </div>
                             <!-- End # Image # -->
                             
@@ -804,12 +806,12 @@
                         <!-- # Portfolio 1 # -->
                         <div class="illustration portfolio-sample animated" data-animation="fadeIn">
                             <figure>
-                                <img src="img/portfolio/1.jpg" alt="Work Sample 1">
+                                <img src="{% static 'img/portfolio/1.jpg'%}" alt="Work Sample 1">
                                 <figcaption>
                                     <div class="overlay text-center">
                                         <h3>Goa</h3>
                                         <h5>3D Effects</h5>
-                                        <a href="img/portfolio/1.jpg" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
+                                        <a href="{% static 'img/portfolio/1.jpg'%}" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
                                         <a href="portfolio_fullwidth_withtext.html"><i class="fa fa-link"></i></a>
                                     </div>
                                 </figcaption>
@@ -820,12 +822,12 @@
                         <!-- # Portfolio 2 # -->
                         <div class="branding portfolio-sample animated" data-animation="fadeIn">
                             <figure>
-                                <img src="img/portfolio/2.jpg" alt="Work Sample 2">
+                                <img src="{% static 'img/portfolio/2.jpg'%}" alt="Work Sample 2">
                                 <figcaption>
                                     <div class="overlay text-center">
                                         <h3>The Hive</h3>
                                         <h5>Media</h5>
-                                        <a href="img/portfolio/2.jpg" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
+                                        <a href="{% static 'img/portfolio/2.jpg'%}" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
                                         <a href="portfolio_fullwidth_withtext.html"><i class="fa fa-link"></i></a>
                                         
                                     </div>
@@ -837,12 +839,12 @@
                         <!-- # Portfolio 3 # -->
                         <div class="print branding portfolio-sample animated" data-animation="fadeIn">
                             <figure>
-                                <img src="img/portfolio/3.jpg" alt="Work Sample 3">
+                                <img src="{% static 'img/portfolio/3.jpg'%}" alt="Work Sample 3">
                                 <figcaption>
                                     <div class="overlay text-center">
                                         <h3>JJ Royal</h3>
                                         <h5>Ads</h5>
-                                        <a href="img/portfolio/3.jpg" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
+                                        <a href="{% static 'img/portfolio/3.jpg'%}" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
                                         <a href="portfolio_fullwidth_withtext.html"><i class="fa fa-link"></i></a>
                                         
                                     </div>
@@ -854,12 +856,12 @@
                         <!-- # Portfolio 4 # -->
                         <div class="illustration print portfolio-sample animated" data-animation="fadeIn">
                             <figure>
-                                <img src="img/portfolio/4.jpg" alt="Work Sample 4">
+                                <img src="{% static 'img/portfolio/4.jpg'%}" alt="Work Sample 4">
                                 <figcaption>
                                     <div class="overlay text-center">
                                         <h3>Kerning</h3>
                                         <h5>Graphics</h5>
-                                        <a href="img/portfolio/4.jpg" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
+                                        <a href="{% static 'img/portfolio/4.jpg'%}" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
                                         <a href="portfolio_fullwidth_withtext.html"><i class="fa fa-link"></i></a>
                                         
                                     </div>
@@ -871,12 +873,12 @@
                         <!-- # Portfolio 5 # -->
                         <div class="illustration portfolio-sample animated" data-animation="fadeIn">
                             <figure>
-                                <img src="img/portfolio/5.jpg" alt="Work Sample 5">
+                                <img src="{% static 'img/portfolio/5.jpg'%}" alt="Work Sample 5">
                                 <figcaption>
                                     <div class="overlay text-center">
                                         <h3>Le Chat</h3>
                                         <h5>Art</h5>
-                                        <a href="img/portfolio/5.jpg" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
+                                        <a href="{% static 'img/portfolio/5.jpg'%}" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
                                         <a href="portfolio_fullwidth_withtext.html"><i class="fa fa-link"></i></a>
                                     </div>
                                 </figcaption>
@@ -887,12 +889,12 @@
                         <!-- # Portfolio 6 # -->
                         <div class="illustration print portfolio-sample animated" data-animation="fadeIn">
                             <figure>
-                                <img src="img/portfolio/6.jpg" alt="Work Sample 6">
+                                <img src="{% static 'img/portfolio/6.jpg'%}" alt="Work Sample 6">
                                 <figcaption>
                                     <div class="overlay text-center">
                                         <h3>Negro</h3>
                                         <h5>Advertisment</h5>
-                                        <a href="img/portfolio/6.jpg" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
+                                        <a href="{% static 'img/portfolio/6.jpg'%}" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
                                         <a href="portfolio_fullwidth_withtext.html"><i class="fa fa-link"></i></a>
                                     </div>
                                 </figcaption>
@@ -903,12 +905,12 @@
                         <!-- # Portfolio 7 # -->
                         <div class="branding portfolio-sample animated" data-animation="fadeIn">
                             <figure>
-                                <img src="img/portfolio/7.jpg" alt="Work Sample 7">
+                                <img src="{% static 'img/portfolio/7.jpg'%}" alt="Work Sample 7">
                                 <figcaption>
                                     <div class="overlay text-center">
                                         <h3>Petit</h3>
                                         <h5>Media</h5>
-                                        <a href="img/portfolio/7.jpg" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
+                                        <a href="{% static 'img/portfolio/7.jpg'%}" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
                                         <a href="portfolio_fullwidth_withtext.html"><i class="fa fa-link"></i></a>
                                     </div>
                                 </figcaption>
@@ -919,12 +921,12 @@
                         <!-- # Portfolio 8 # -->
                         <div class="print portfolio-sample animated" data-animation="fadeIn">
                             <figure>
-                                <img src="img/portfolio/8.jpg" alt="Work Sample 8">
+                                <img src="{% static 'img/portfolio/8.jpg'%}" alt="Work Sample 8">
                                 <figcaption>
                                     <div class="overlay text-center">
                                         <h3>Sane</h3>
                                         <h5>Print</h5>
-                                        <a href="img/portfolio/8.jpg" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
+                                        <a href="{% static 'img/portfolio/8.jpg'%}" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
                                         <a href="portfolio_fullwidth_withtext.html"><i class="fa fa-link"></i></a>
                                     </div>
                                 </figcaption>
@@ -935,12 +937,12 @@
                         <!-- # Portfolio 9 # -->
                         <div class="illustration branding portfolio-sample animated" data-animation="fadeIn">
                             <figure>
-                                <img src="img/portfolio/9.jpg" alt="Work Sample 9">
+                                <img src="{% static 'img/portfolio/9.jpg'%}" alt="Work Sample 9">
                                 <figcaption>
                                     <div class="overlay text-center">
                                         <h3>Sant</h3>
                                         <h5>Branding</h5>
-                                        <a href="img/portfolio/9.jpg" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
+                                        <a href="{% static 'img/portfolio/9.jpg'%}" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
                                         <a href="portfolio_fullwidth_withtext.html"><i class="fa fa-link"></i></a>
                                     </div>
                                 </figcaption>
@@ -951,12 +953,12 @@
                         <!-- # Portfolio 10 # -->
                         <div class="print portfolio-sample animated" data-animation="fadeIn">
                             <figure>
-                                <img src="img/portfolio/10.jpg" alt="Work Sample 10">
+                                <img src="{% static 'img/portfolio/10.jpg'%}" alt="Work Sample 10">
                                 <figcaption>
                                     <div class="overlay text-center">
                                         <h3>Hnina</h3>
                                         <h5>Illustration</h5>
-                                        <a href="img/portfolio/10.jpg" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
+                                        <a href="{% static 'img/portfolio/10.jpg'%}" data-fancybox-group="gallery" title="Work Sample" class="fancybox-effects-b"><i class="fa fa-search"></i></a>
                                         <a href="portfolio_fullwidth_withtext.html"><i class="fa fa-link"></i></a>
                                     </div>
                                 </figcaption>
@@ -1002,7 +1004,7 @@
                                 <div class="team-member">
                                     <!-- # Your Image # -->
                                     <div class="img-member">
-                                        <img src="img/team/team_1.jpg" alt="Memeber 1" class="img-circle">
+                                        <img src="{% static 'img/team/team_1.jpg'%}" alt="Memeber 1" class="img-circle">
                                     </div>
                                     <!-- End # Your Image -->
                                     
@@ -1028,7 +1030,7 @@
                                 <div class="team-member">
                                     <!-- # Your Image # -->
                                     <div class="img-member">
-                                        <img src="img/team/team_2.jpg" alt="Memeber 2" class="img-circle">
+                                        <img src="{% static 'img/team/team_2.jpg'%}" alt="Memeber 2" class="img-circle">
                                     </div>
                                     <!-- End # Your Image -->
                                     
@@ -1054,7 +1056,7 @@
                                 <div class="team-member">
                                     <!-- # Your Image # -->
                                     <div class="img-member">
-                                        <img src="img/team/team_3.jpg" alt="Memeber 3" class="img-circle">
+                                        <img src="{% static 'img/team/team_3.jpg'%}" alt="Memeber 3" class="img-circle">
                                     </div>
                                     <!-- End # Your Image -->
                                     
@@ -1080,7 +1082,7 @@
                                 <div class="team-member">
                                     <!-- # Your Image # -->
                                     <div class="img-member">
-                                        <img src="img/team/team_4.jpg" alt="Memeber 4" class="img-circle">
+                                        <img src="{% static 'img/team/team_4.jpg'%}" alt="Memeber 4" class="img-circle">
                                     </div>
                                     <!-- End # Your Image -->
                                     
@@ -1106,7 +1108,7 @@
                                 <div class="team-member">
                                     <!-- # Your Image # -->
                                     <div class="img-member">
-                                        <img src="img/team/team_5.jpg" alt="Memeber 5" class="img-circle">
+                                        <img src="{% static 'img/team/team_5.jpg'%}" alt="Memeber 5" class="img-circle">
                                     </div>
                                     <!-- End # Your Image -->
                                     
@@ -1132,7 +1134,7 @@
                                 <div class="team-member">
                                     <!-- # Your Image # -->
                                     <div class="img-member">
-                                        <img src="img/team/team_6.jpg" alt="Memeber 6" class="img-circle">
+                                        <img src="{% static 'img/team/team_6.jpg'%}" alt="Memeber 6" class="img-circle">
                                     </div>
                                     <!-- End # Your Image -->
                                     
@@ -1158,7 +1160,7 @@
                                 <div class="team-member">
                                     <!-- # Your Image # -->
                                     <div class="img-member">
-                                        <img src="img/team/team_7.jpg" alt="Memeber 7" class="img-circle">
+                                        <img src="{% static 'img/team/team_7.jpg'%}" alt="Memeber 7" class="img-circle">
                                     </div>
                                     <!-- End # Your Image -->
                                     
@@ -1184,7 +1186,7 @@
                                 <div class="team-member">
                                     <!-- # Your Image # -->
                                     <div class="img-member">
-                                        <img src="img/team/team_8.jpg" alt="Memeber 8" class="img-circle">
+                                        <img src="{% static 'img/team/team_8.jpg'%}" alt="Memeber 8" class="img-circle">
                                     </div>
                                     <!-- End # Your Image -->
                                     
@@ -1236,7 +1238,7 @@
                             	<div class="build-right">
                                 	<div class="img-build">
                                     	<div class="img-content animated" data-animation="fadeInDown" data-animation-delay="100">
-                                        	<img src="img/build_1.png" class="img-circle" alt="">
+                                        	<img src="{% static 'img/build_1.png'%}" class="img-circle" alt="">
                                             <h4>PARIS</h4>
                                             <h3>2014</h3>
                                         </div>
@@ -1252,7 +1254,7 @@
                                 <div class="build-left">
                                 	<div class="img-build">
                                     	<div class="img-content animated" data-animation="fadeInUp" data-animation-delay="300">
-                                        	<img src="img/build_2.png" class="img-circle" alt="">
+                                        	<img src="{% static 'img/build_2.png'%}" class="img-circle" alt="">
                                             <h4>Rome</h4>
                                             <h3>2010</h3>
                                         </div>
@@ -1268,7 +1270,7 @@
                             	<div class="build-right">
                                 	<div class="img-build animated" data-animation="fadeInUp" data-animation-delay="500">
                                     	<div class="img-content">
-                                        	<img src="img/build_3.png" class="img-circle" alt="">
+                                        	<img src="{% static 'img/build_3.png'%}" class="img-circle" alt="">
                                             <h4>Madrid</h4>
                                             <h3>2005</h3>
                                         </div>
@@ -1284,7 +1286,7 @@
                                 <div class="build-left">
                                 	<div class="img-build">
                                     	<div class="img-content animated" data-animation="fadeInUp" data-animation-delay="700">
-                                        	<img src="img/build_4.png" class="img-circle" alt="">
+                                        	<img src="{% static 'img/build_4.png'%}" class="img-circle" alt="">
                                             <h4>Cairo</h4>
                                             <h3>1990</h3>
                                         </div>
@@ -1521,37 +1523,37 @@
                            <div id="owl-demo2" class="owl-carousel2 clearfix">
                                 <!-- # Partner Item # -->
                                 <div class="col-md-3 text-center owl-item">
-                                    <img src="img/clients/1.png" alt="Partner" class="img-responsive">
+                                    <img src="{% static 'img/clients/1.png'%}" alt="Partner" class="img-responsive">
                                 </div>
                                 <!-- End # Partner Item # -->
                                 
                                 <!-- # Partner Item # -->
                                 <div class="col-md-3 text-center owl-item">
-                                    <img src="img/clients/2.png" alt="Partner" class="img-responsive">
+                                    <img src="{% static 'img/clients/2.png'%}" alt="Partner" class="img-responsive">
                                 </div>
                                 <!-- End # Partner Item # -->
                                 
                                 <!-- # Partner Item # -->
                                 <div class="col-md-3 text-center owl-item">
-                                    <img src="img/clients/3.png" alt="Partner" class="img-responsive">
+                                    <img src="{% static 'img/clients/3.png'%}" alt="Partner" class="img-responsive">
                                 </div>
                                 <!-- End # Partner Item # -->
                                 
                                 <!-- # Partner Item # -->
                                 <div class="col-md-3 text-center owl-item">
-                                    <img src="img/clients/4.png" alt="Partner" class="img-responsive">
+                                    <img src="{% static 'img/clients/4.png'%}" alt="Partner" class="img-responsive">
                                 </div>
                                 <!-- End # Partner Item # -->
                                 
                                 <!-- # Partner Item # -->
                                 <div class="col-md-3 text-center owl-item">
-                                    <img src="img/clients/5.png" alt="Partner" class="img-responsive">
+                                    <img src="{% static 'img/clients/5.png'%}" alt="Partner" class="img-responsive">
                                 </div>
                                 <!-- End # Partner Item # -->
                                 
                                 <!-- # Partner Item # -->
                                 <div class="col-md-3 text-center owl-item">
-                                    <img src="img/clients/6.png" alt="Partner" class="img-responsive">
+                                    <img src="{% static 'img/clients/6.png'%}" alt="Partner" class="img-responsive">
                                 </div>
                                 <!-- End # Partner Item # -->
                                 
@@ -1576,7 +1578,7 @@
                 	<div class="row">
                     	<!-- # About Company # -->
                     	<div class="col-md-6  col-sm-12 col-xs-12">
-                        	<h5><img src="img/logo/footer_logo@2x.png" width="106" height="23" alt="Logo"></h5>
+                        	<h5><img src="{% static 'img/logo/footer_logo@2x.png'%}" width="106" height="23" alt="Logo"></h5>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.Lorem Ipsum is simply dummy text of the printing and typesetting industrydummy text ever since.Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                         </div>
                         <!-- # EndAbout Company  # -->
@@ -1636,39 +1638,39 @@
        
 
 <!-- == Le Scripts Tags == -->
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+<script src="{% static 'js/jquery-1.11.0.min.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script><!-- Bootstrap -->
 <!--[if lte IE 8]>
 		<script src="js/respond.min.js"></script>
 <![endif]-->
-<script src="js/modernizr.js"></script><!-- Modernizr -->
-<script src="js/jquery.easing.1.3.js"></script> <!-- Easing Pack 1.3 -->
-<script src="js/jquery.mousewheel.js"></script> <!-- Mousewheel Pack -->
-<script src="js/retina.js"></script><!-- Retina Ready Images -->
-<script src="js/animate.js"></script><!-- Animate --> 
-<script src="js/jquery.appear.js"></script><!-- Appear jQuery --> 
-<script src="js/jquery.stellar.js"></script><!-- Stellar Parallax -->
-<script src="js/smoothScroll.js"></script><!-- Smooth Scroll --> 
-<script src="js/jquery.isotope.js"></script><!-- Portfolio --> 
-<script src="js/fancybox/jquery.fancybox.js"></script><!-- FancyBox -->
-<script src="js/fancybox/helpers/jquery.fancybox-media.js"></script><!-- FancyBox -->
-<script src="js/fancybox/helpers/jquery.fancybox-thumbs.js"></script><!-- FancyBox -->
-<script src="js/waypoints.min.js"></script> <!-- Way Point for Counter -->
-<script src="js/jquery.counterup.min.js"></script> <!-- Counter -->
-<script src="js/jquery.nicescroll.min.js"></script><!-- NiceScroll -->   
-<script src="js/carousal/owl.carousel.js"></script><!-- Carousel -->
-<script src="js/video_plugin/jquery.videobackground.js"></script><!-- Video Background -->   
-<script src="js/video_plugin/devices.js"></script> <!-- devices Pack -->
-<script src="js/video_plugin/vidscale.js"></script><!-- Video Background -->
-<script src="js/masonry.pkgd.min.js"></script><!-- Masonry-->    
-<script src="js/ticker.js"></script><!-- Ticker -->
-<script src="js/jflickrfeed.min.js"></script><!-- Flickr -->
+<script src="{% static 'js/modernizr.js'%}"></script><!-- Modernizr -->
+<script src="{% static 'js/jquery.easing.1.3.js'%}"></script> <!-- Easing Pack 1.3 -->
+<script src="{% static 'js/jquery.mousewheel.js'%}"></script> <!-- Mousewheel Pack -->
+<script src="{% static 'js/retina.js'%}"></script><!-- Retina Ready Images -->
+<script src="{% static 'js/animate.js'%}"></script><!-- Animate --> 
+<script src="{% static 'js/jquery.appear.js'%}"></script><!-- Appear jQuery --> 
+<script src="{% static 'js/jquery.stellar.js'%}"></script><!-- Stellar Parallax -->
+<script src="{% static 'js/smoothScroll.js'%}"></script><!-- Smooth Scroll --> 
+<script src="{% static 'js/jquery.isotope.js'%}"></script><!-- Portfolio --> 
+<script src="{% static 'js/fancybox/jquery.fancybox.js'%}"></script><!-- FancyBox -->
+<script src="{% static 'js/fancybox/helpers/jquery.fancybox-media.js'%}"></script><!-- FancyBox -->
+<script src="{% static 'js/fancybox/helpers/jquery.fancybox-thumbs.js'%}"></script><!-- FancyBox -->
+<script src="{% static 'js/waypoints.min.js'%}"></script> <!-- Way Point for Counter -->
+<script src="{% static 'js/jquery.counterup.min.js'%}"></script> <!-- Counter -->
+<script src="{% static 'js/jquery.nicescroll.min.js'%}"></script><!-- NiceScroll -->   
+<script src="{% static 'js/carousal/owl.carousel.js'%}"></script><!-- Carousel -->
+<script src="{% static 'js/video_plugin/jquery.videobackground.js'%}"></script><!-- Video Background -->   
+<script src="{% static 'js/video_plugin/devices.js'%}"></script> <!-- devices Pack -->
+<script src="{% static 'js/video_plugin/vidscale.js'%}"></script><!-- Video Background -->
+<script src="{% static 'js/masonry.pkgd.min.js'%}"></script><!-- Masonry-->    
+<script src="{% static 'js/ticker.js'%}"></script><!-- Ticker -->
+<script src="{% static 'js/jflickrfeed.min.js'%}"></script><!-- Flickr -->
 <script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script><!-- Google Map -->
-<script src="js/scripts.js"></script><!-- Configuration -->
+<script src="{% static 'js/scripts.js'%}"></script><!-- Configuration -->
 
 <!-- For This Pgae Only -->
-<script src="js/slider/revolution/jquery.themepunch.tools.min.js"></script><!-- Revolution Slider -->   
-<script src="js/slider/revolution/jquery.themepunch.revolution.min.js"></script><!-- Revolution Slider -->
+<script src="{% static 'js/slider/revolution/jquery.themepunch.tools.min.js'%}"></script><!-- Revolution Slider -->   
+<script src="{% static 'js/slider/revolution/jquery.themepunch.revolution.min.js'%}"></script><!-- Revolution Slider -->
 <script>
 	$(document).ready(function() {
     jQuery('.tp-banner').show().revolution(
