@@ -1,0 +1,73 @@
+@charset utf-8;
+/* CSS Document */
+/*
+Theme Name:  Rozana - from Creative WP.k
+Description:  Rozana - Multi Purpose Bootstrap Retina Raedy Template
+Version: 1.0 - initial release
+Author:  Creative WP
+Website:  http://creative-wp.com/demos/rozana
+*/
+
+/* 
+CSS General
+*/
+
+
+/* == Slider == */
+
+.full-background
+	{
+		margin:0 auto;
+		width:100%;
+		padding:0;
+		height:100%;
+		position:relative;
+	}
+
+.full-background .transparent-bg 
+	{
+		background:rgba(0,0,0,0);
+	}
+
+.full-background h3, 
+.full-background h2
+	{
+		color:#ffffff;
+		text-transform:uppercase;
+		font-weight:300;
+	}
+
+.full-background h2 
+	{
+		margin-top:60px;
+		font-size:48px;
+		font-weight:300;
+		margin-bottom:20px;
+	}
+
+.full-background span.line span
+	{
+		width: 120px;
+		height: 2px;
+		display: inline-block;
+		background:#ffffff;
+	}
+
+.full-background .title-slide-bold 
+	{
+		color:#ffffff;
+		font-size:80px;
+		line-height:80px;
+		margin-top:10px;
+		margin-bottom:40px;
+		font-weight:400;
+	}
+
+.move-bg {
+	background: #000 url(../../img/portfolio.jpg) fixed left top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+/* ========== END ======== */
+/* Last Modified 28-9-2014 */

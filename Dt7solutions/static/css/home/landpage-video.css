@@ -1,0 +1,128 @@
+@charset utf-8;
+/* CSS Document */
+/*
+Theme Name:  Rozana - from Creative WP.k
+Description:  Rozana - Multi Purpose Bootstrap Retina Raedy Template
+Version: 1.0 - initial release
+Author:  Creative WP
+Website:  http://creative-wp.com/demos/rozana
+*/
+
+/* 
+CSS General
+*/
+
+/* == Slider == */
+
+.fullwidth-slider_5 
+	{
+		margin:0 auto;
+		width:100%;
+		padding:0;
+		position:relative;
+		height:100%;
+		z-index:0;
+	}
+
+.fullwidth-slider_5 .transparent-bg
+	{
+		background:rgba(0,0,0,0.3);
+	}
+
+.fullwidth-slider_5 h3
+	{
+		color:#ffffff;
+		text-transform:uppercase;
+		font-weight:300;
+	}
+
+.fullwidth-slider_5 .title-slide-bold 
+	{
+		color:#ffffff;
+		font-size:80px;
+		line-height:80px;
+		margin-top:40px;
+		margin-bottom:20px;
+	}
+
+.fullwidth-slider_5 h3 
+	{
+		color:#ffffff;
+		font-weight:300;
+		text-transform: uppercase;
+		margin-bottom:20px;
+	}
+.fullwidth-slider_5 span.line span 
+	{
+		width: 120px;
+		height: 2px;
+		display: inline-block;
+		background:#ffffff;
+	}
+
+.fullwidth-slider_5 h3.slogan-text 
+	{
+		margin-bottom:40px;
+		text-transform:capitalize;
+	}
+
+.overview 
+	{
+		text-align:left;
+		padding-top:100px;
+	}
+
+p 
+	{
+		font-size:15px;
+	}
+
+.testimonial-item h2 
+	{
+		color:#ffffff;
+		text-transform:uppercase;
+		margin-top:20px;
+	}
+
+.testimonial-item h4, 
+.testimonial-item p span 
+	{
+		color:#8A8A8A;
+	}
+
+.testimonial-item p
+	{
+		font-size:32px;
+		line-height:36px;
+		color:#ffffff;
+		margin-top:60px;
+		font-style:italic;
+		font-weight:300;
+	}
+
+.grey-bg #owl-demo2 .owl-controls .owl-pagination,
+.grey-bg #owl-demo2 .owl-controls .owl-page span 
+	{
+		display:none;
+		margin:0;
+		padding:0;
+	}
+
+.grey-bg .owl-theme .owl-controls
+	{
+		margin:0;
+		padding:0;
+	}
+
+.social-network-footer_2 
+	{
+		margin-top:20px;
+	}
+	
+.owl-item 
+	{
+		margin-bottom:20px;
+	}
+
+/* ========== END ======== */
+/* Last Modified 28-9-2014 */

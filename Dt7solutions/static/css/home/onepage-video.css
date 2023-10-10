@@ -1,0 +1,121 @@
+@charset utf-8;
+/* CSS Document */
+/*
+Theme Name:  Rozana - from Creative WP.k
+Description:  Rozana - Multi Purpose Bootstrap Retina Raedy Template
+Version: 1.0 - initial release
+Author:  Creative WP
+Website:  http://creative-wp.com/demos/rozana
+*/
+
+/* 
+CSS General
+*/
+
+/* == Slider == */
+
+.fullwidth-slider_3 
+	{
+		margin:0 auto;
+		width:100%;
+		padding:0;
+		position:relative;
+		height:100%;
+	}
+
+.fullwidth-slider_3 .cbp-bislideshow li,
+.fullwidth-slider_3 .cbp-bislideshow li img
+	{
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		background-position: center center;
+	}
+
+.fullwidth-slider_3 .transparent-bg
+	{
+		background:rgba(0,0,0,0.5);
+	}
+
+.fullwidth-slider_3 h3
+	{
+		color:#ffffff;
+		text-transform:uppercase;
+		font-weight:300;
+	}
+
+.fullwidth-slider_3 span.line span 
+	{
+		width: 120px;
+		height: 2px;
+		display: inline-block;
+		background:#ffffff;
+	}
+
+.fullwidth-slider_3 .title-slide-bold
+	{
+		color:#ffffff;
+		font-size:70px;
+		line-height:70px;
+		margin-top:60px;
+		margin-bottom:20px;
+	}
+
+.fullwidth-slider_3 h3.slogan-text
+	{
+		color:#ffffff;
+		font-weight:300;
+		text-transform:capitalize;
+		margin-bottom:40px;
+	}
+
+/* App Slider */
+
+.app-slide 
+	{
+		margin:0 auto;
+		margin-bottom:40px;
+		padding:0;
+		list-style-type:none;
+	}
+
+.app-slide li 
+	{
+		display:inline-block;
+		margin:0 10px 10px 0;
+	}
+
+.app-slide li:last-child 
+	{
+		margin:0 0 10px 0;
+	}
+
+.app-slide li i 
+	{
+		color:#ffffff;
+		font-size:40px;
+		width:80px;
+		height:80px;
+		background:rgba(255,255,255,0.1);
+		line-height:80px;
+		text-align:center;
+		display:block;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+	}
+
+.fullwidth-slider_3 span.line 
+	{
+		margin-bottom:40px;
+	}
+
+#fade h1 
+	{
+		text-transform:uppercase;
+		font-size:80px;
+		line-height:80px;
+	}
+
+/* ========== END ======== */
+/* Last Modified 28-9-2014 */

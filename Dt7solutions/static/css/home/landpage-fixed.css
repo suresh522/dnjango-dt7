@@ -1,0 +1,128 @@
+@charset utf-8;
+/* CSS Document */
+/*
+Theme Name:  Rozana - from Creative WP.k
+Description:  Rozana - Multi Purpose Bootstrap Retina Raedy Template
+Version: 1.0 - initial release
+Author:  Creative WP
+Website:  http://creative-wp.com/demos/rozana
+*/
+
+/* 
+CSS General
+*/
+
+
+/* == Slider == */
+
+.fullwidth-slider_2 
+	{
+		margin:0 auto;
+		width:100%;
+		padding:0;
+		height:650px;
+		position:relative;
+		background: url(../../img/background/landpage_fixed.jpg) no-repeat center center #2a2a2a;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/background/landpage_fixed.jpg)', sizingMethod='scale');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+.fullwidth-slider_2 .transparent-bg
+	{
+		background:rgba(0,0,0,0.7);
+	}
+
+.fullwidth-slider_2 h3 
+	{
+		color:#ffffff;
+		text-transform:uppercase;
+		font-weight:300;
+	}
+
+.fullwidth-slider_2 h3.slogan-text
+	{
+		color:#ffffff;
+		font-weight:300;
+		text-transform:capitalize;
+		margin-bottom:40px;
+	}
+
+.fullwidth-slider_2 p
+	{
+		color:#fff;
+		font-weight:300;
+		font-size:18px;
+		margin-bottom:40px;
+	}
+
+.hand-mobile 
+	{
+		position: absolute;
+		bottom:0;
+		left:10%;
+		z-index:4;
+	}
+
+.overview 
+	{
+		text-align:left;
+		padding-top:100px;
+	}
+
+p 
+	{
+		font-size:15px;
+	}
+
+.testimonial-item h2
+	{
+		color:#ffffff;
+		text-transform:uppercase;
+		margin-top:20px;
+	}
+
+.testimonial-item h4,
+.testimonial-item p span 
+	{
+		color:#8A8A8A;
+	}
+
+.testimonial-item p
+	{
+		font-size:32px;
+		line-height:36px;
+		color:#ffffff;
+		margin-top:60px;
+		font-style:italic;
+		font-weight:300;
+	}
+
+.grey-bg #owl-demo2 .owl-controls .owl-pagination,
+.grey-bg #owl-demo2 .owl-controls .owl-page span
+	{
+		display:none;
+		margin:0;
+		padding:0;
+	}
+
+.grey-bg .owl-theme .owl-controls
+	{
+		margin:0;
+		padding:0;
+	}
+
+.social-network-footer_2
+	{
+		margin-top:20px;
+	}
+
+.owl-item 
+	{
+		margin-bottom:20px;
+	}
+
+/* ========== END ======== */
+/* Last Modified 28-9-2014 */
